@@ -29,22 +29,16 @@ console.log(totalPrice);
 
 // 6. Print an array with all the drinks that are seasonal.
 
-// const printSeasonal = (drink) => {
-//   if (drink.seasonal === true) {
-//     return drink.name;
-//   }
-// };
-// const mapSeasonal = coffeeData.filter(printSeasonal);
-
 const printSeason = coffeeData.filter(drink => drink.seasonal);
 
-
 console.log(printSeason);
+
+// 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
 
 const addString = (drink) => {
   for (i in printSeason) {
     console.log(`${drink[i].name} with imported beans`)
   }
 }
+
 addString(printSeason);
-// console.log(addString(printSeason));
